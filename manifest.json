@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Chrome Search Tabs",
+  "version": "1.0",
+  "description": "Remove Chrome Search Tabs",
+  "action": {
+    "default_popup" : "src/popup.html"
+  },
+  "host_permissions" : [
+    "https://www.bing.com/search?q=*",
+    "https://www.google.co.kr/search?q=*"
+  ]
+}

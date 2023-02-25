@@ -1,0 +1,1 @@
+# chrome-ext-close-search-tabs

@@ -1,12 +1,16 @@
 // global 변수 추가
 // 함수로 묶기
 
-const tabs = await chrome.tabs.query({
-  url: [
-    'https://www.bing.com/search?q=*',
-    'https://www.google.co.kr/search?q=*',
-  ],
-});
+const findSearchTabs = async () => {
+  return await chrome.tabs.query({
+    url: [
+      'https://www.bing.com/search?q=*',
+      'https://www.google.co.kr/search?q=*',
+    ],
+  });
+};
+
+const tabs = await findSearchTabs();
 
 // tabs 없을경우
 
@@ -33,8 +37,10 @@ for (const tab of tabs) {
 
 document.querySelector('ul').append(...elements);
 
-document.getElementById('all_close_btn').addEventListener('click', () => {
-  for (const iterator of tabs) {
-    // 전체닫기
-  }
+document.getElementById('all_close_btn').addEventListener('click', async () => {
+  const allTabs = await findSearchTabs();
+  if (!allTabs) return;
+  allTabs.forEach((ele) => {
+    chrome.tabs.remove(ele.id);
+  });
 });

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Remove Chrome Search Tabs",
+  "name": "Close the Search tab",
   "version": "1.0",
-  "description": "Remove Chrome Search Tabs",
+  "description": "Close the Search tab",
   "action": {
     "default_popup" : "src/popup.html",
     "default_icon" : "image/close-window.png"
@@ -13,9 +13,9 @@
     "https://search.naver.com/search.naver?*"
   ],
   "icons" : {
-    "16" : "image/icon-16",
-    "32" : "image/icon-32",
-    "48" : "image/icon-48",
-    "128" : "image/icon-128"
+    "16" : "image/icon-16.png",
+    "32" : "image/icon-32.png",
+    "48" : "image/icon-48.png",
+    "128" : "image/icon-128.png"
   }
 }

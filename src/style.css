@@ -23,6 +23,6 @@ p {
   margin: 0;
 }
 
-a:hover{
+button, a:hover{
   cursor: pointer;
 }

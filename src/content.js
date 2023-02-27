@@ -4,8 +4,9 @@
 const findSearchTabs = async () => {
   return await chrome.tabs.query({
     url: [
-      'https://www.bing.com/search?q=*',
-      'https://www.google.co.kr/search?q=*',
+      "https://www.bing.com/search?q=*",
+      "https://www.google.co.kr/search?q=*",
+      "https://search.naver.com/search.naver?*",
     ],
   });
 };
@@ -42,5 +43,6 @@ document.getElementById('all_close_btn').addEventListener('click', async () => {
   if (!allTabs) return;
   allTabs.forEach((ele) => {
     chrome.tabs.remove(ele.id);
+    removeTabData(ele.id);
   });
 });

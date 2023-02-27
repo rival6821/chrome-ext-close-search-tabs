@@ -4,11 +4,18 @@
   "version": "1.0",
   "description": "Remove Chrome Search Tabs",
   "action": {
-    "default_popup" : "src/popup.html"
+    "default_popup" : "src/popup.html",
+    "default_icon" : "image/close-window.png"
   },
   "host_permissions" : [
     "https://www.bing.com/search?q=*",
     "https://www.google.co.kr/search?q=*",
     "https://search.naver.com/search.naver?*"
-  ]
+  ],
+  "icons" : {
+    "16" : "image/icon-16",
+    "32" : "image/icon-32",
+    "48" : "image/icon-48",
+    "128" : "image/icon-128"
+  }
 }

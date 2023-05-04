@@ -4,8 +4,8 @@
 const findSearchTabs = async () => {
   return await chrome.tabs.query({
     url: [
-      "https://www.bing.com/search?q=*",
-      "https://www.google.co.kr/search?q=*",
+      "https://www.bing.com/search?*",
+      "https://www.google.co.kr/search?*",
       "https://search.naver.com/search.naver?*",
     ],
   });

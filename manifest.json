@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Close the Search tab",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Close the Search tab",
   "action": {
     "default_popup" : "src/popup.html",

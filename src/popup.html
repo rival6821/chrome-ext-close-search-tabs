@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     
@@ -16,8 +17,10 @@
       </li>
     </template>
 
-    <h1>Close the Search tab</h1>
-    <button type="button" id="all_close_btn">Close All</button>
+    <h1 class="text-2xl">Close the Search tab</h1>
+    <button type="button" id="all_close_btn" 
+      class="text-purple-600 rounded-full border border-purple-200 px-3 py-1 text-sm"
+    >Close All</button>
     <ul></ul>
 
     <script src="./content.js" type="module"></script>

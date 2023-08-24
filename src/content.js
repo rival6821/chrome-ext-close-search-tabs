@@ -1,6 +1,3 @@
-// global 변수 추가
-// 함수로 묶기
-
 const findSearchTabs = async () => {
   return await chrome.tabs.query({
     url: [

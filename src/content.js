@@ -4,6 +4,9 @@ const findSearchTabs = async () => {
       "https://www.bing.com/search?*",
       "https://www.google.co.kr/search?*",
       "https://search.naver.com/search.naver?*",
+      "chrome://newtab/",
+      "edge://newtab/",
+      "about:newtab",
     ],
   });
 };
